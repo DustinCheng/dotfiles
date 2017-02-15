@@ -7,10 +7,11 @@
 	type = cat-file -t
 	dump = cat-file -pst = status
 	dt = difftool
+	da = diffall
 [diff]
-        tool = p4merge
+    tool = p4merge
 [merge]
-        tool = p4merge
+    tool = p4merge
 [difftool]
 	prompt = false
 [mergetool]
