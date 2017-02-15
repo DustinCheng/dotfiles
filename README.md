@@ -1,2 +1,2 @@
 # dotfiles
-put git-diffall $git-folder$/cmd/
+put git-diffall into $git-folder$/cmd/
