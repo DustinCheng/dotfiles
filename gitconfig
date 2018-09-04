@@ -3,7 +3,7 @@
 	ci = commit
 	st = status
 	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	hist = log --oneline --all --decorate --graph --since=90.days --pretty=format:"%C(yellow)%h%C(auto)%d%Creset %s %Cgreen%cr %C(bold blue)%an%Creset" 
 	type = cat-file -t
 	dump = cat-file -pst = status
 	dt = difftool
