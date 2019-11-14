@@ -3,16 +3,23 @@
 	ci = commit
 	st = status
 	br = branch
-	hist = log --oneline --all --decorate --graph --since=90.days --pretty=format:"%C(yellow)%h%C(auto)%d%Creset %s %Cgreen%cr %C(bold blue)%an%Creset" 
+	hist = log --graph --pretty='%C(yellow)%h%Creset %C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset'
 	type = cat-file -t
 	dump = cat-file -pst = status
 	dt = difftool
-	da = diffall
+	da = difftool --dir-diff
 [diff]
-    tool = p4merge
+	tool = p4merge
 [merge]
-    tool = p4merge
+	tool = p4merge
 [difftool]
 	prompt = false
+[difftool "p4merge"]
+	path = "/Applications/p4merge.app/Contents/MacOS/p4merge"
 [mergetool]
 	prompt = false
+[mergetool "p4merge"]
+	path = "/Applications/p4merge.app/Contents/MacOS/p4merge"
+[user]
+	name = DustinCheng
+	email = miniminci@gmail.com
