@@ -1,2 +1,2 @@
 # dotfiles
-put git-diffall into $git-folder$/cmd/
+init.lua hammerspoon script
